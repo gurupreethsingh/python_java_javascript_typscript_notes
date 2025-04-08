@@ -1,32 +1,78 @@
 myfile = open("E:/python_java_javascript/python_java_javascript_typscript_notes/javascript/Javascript_notes.txt" , "a")
 
 my_notes = """
+
 ------------------------------------------------------------------------------
-topic 3 : varaibles declaration and initialization and printing.  
--------------------------------------------------------------------------------
+topic 4 : There are 6 conditional statments in JS
+------------------------------------------------------------------------------
+// if
+// if- else
+// if -else if - else
+// switch - case 
+// break
+// continue
 
-// let a = 100;
-// console.log(a);
+var name = "Raj";
 
-// var name = "shubham";
-// console.log(name);
+if (name == "Shubham")
+{
+    console.log("Access granted.");
+}
 
-// var name = "Gurupreeth";
-// console.log(name);
+else if (name == "Sham")
+    {
+        console.log("Access granted.");
+    }
 
-// a = 200; 
-// console.log(a);
+  else  if (name == "Raj")
+        {
+            console.log("Access granted.");
+        }
 
-// const b = 300; 
-// console.log(b);
+     else   if (name == "Raju")
+            {
+                console.log("Access granted.");
+            }
 
- // priting techniquies.
+     else  if (name == "Ramesh")
+                {
+                    console.log("Access granted.");
+                }
+	else{
+		console.log("Access Denied");
+	}
 
-// var name = "Shubham";
-// console.log("The name is " + name);
-// console.log("The name is " , name);
-// console.log(`The name is ${name}`);
-// console.log(`The name is ${name}`);
+	// SWITCH - CASE statement 
+	switch(name)
+	{
+		case "Shubham" : {console.log("Access granted"); break;  }
+		case "Raj" : {console.log("Access granted"); break;  }
+		case "Raju" : {console.log("Access granted"); break;  }
+		case "Ramesh" : {console.log("Access granted"); break;  }
+		case "Sham" : {console.log("Access granted"); break;  }
+		default: { console.log("Access Denied");}
+	}
+
+	// BREAK statement. 
+	for ( let i =1; i <= 10; i++)
+	{
+		console.log(i);
+		if(i == 5)
+		{
+			break;
+		}
+	}
+
+	// Continue Statement. 
+
+	for( let i = 1; i<=10; i++)
+	{
+		if(i==5)
+		{
+			continue;
+		}
+		console.log(i);
+	}
 
 """
 
