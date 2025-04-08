@@ -1,21 +1,35 @@
-console.log("hello world");
+// 1. literals. 
 
-let a = 10;
-let b = 20;
-let c = "10";
-let d = 10;
+// number   75  3   , 3.4  5.6
+// string 
+// true, false (boolean)
 
-console.log(a+b);
-console.log("the sum of a and b is " + (a+b));
-console.log("the sum of a and b is " , (a+b));
-console.log("the sum of " + a +" and " + b + " is " + (a+b));
+// console.log(20);
+// console.log(3.4);
+// console.log('a');
+// console.log("hello world");
 
+// // varaibles.  
 
-console.log(a>b);
-console.log(a<b);
-console.log(a == d);
-console.log(a === d);
-console.log(a == c);  // no strict rules ( tries and converts string into integer)
-console.log(a === c);  //  very strict, check the datatype
+// let a = 100;
+// console.log(a);
 
+// var name = "shubham";
+// console.log(name);
 
+// var name = "Gurupreeth";
+// console.log(name);
+
+// a = 200; 
+// console.log(a);
+
+// const b = 300; 
+// console.log(b);
+
+ // priting techniquies.
+
+// var name = "Shubham";
+// console.log("The name is " + name);
+// console.log("The name is " , name);
+// console.log(`The name is ${name}`);
+// console.log(`The name is ${name}`);
