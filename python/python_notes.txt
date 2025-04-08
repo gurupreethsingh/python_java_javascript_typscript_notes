@@ -1,0 +1,50 @@
+
+------------------------------------------------------------------------------
+topic 1: python variables
+-------------------------------------------------------------------------------
+    a = 10
+    b = 2.3
+    c = 'a'
+    d = "hello world"
+    f = True
+
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    print(f)    
+
+
+------------------------------------------------------------------------------
+topic 2: python concatination
+-------------------------------------------------------------------------------
+    a = 10 
+    b = 20 
+    c = a+b
+    print(a+b)
+    print("The sum of a and b is "+ str(c))
+    print("The sum of a and b is", c)
+    print("The sum of {} and {} is {}".format(b, a, c))
+    print("We will get {2} when we add {1} with {0}".format(a, b, c))
+
+    result = True
+
+    print("the result is ", result)
+
+    first_name = "Gurupreeth"
+    last_name = "Singh"
+
+    print(first_name + last_name)
+
+
+------------------------------------------------------------------------------
+topic 3: relational operators
+-------------------------------------------------------------------------------
+    a = 10 
+    b = 20 
+
+    print(a <= b)
+    print(a == b)
+    print(a >= b)
+    print(a != b)
+
