@@ -26,10 +26,12 @@
 // const b = 300; 
 // console.log(b);
 
- // priting techniquies.
+// priting techniquies.
 
 // var name = "Shubham";
 // console.log("The name is " + name);
 // console.log("The name is " , name);
 // console.log(`The name is ${name}`);
 // console.log(`The name is ${name}`);
+
+document.write("<a>Hello ecoders</a><br/><a>Welcome to javascript</a>");
