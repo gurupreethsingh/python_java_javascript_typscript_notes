@@ -1,4 +1,16 @@
-myfile = open("Java_notes.txt" , "a")
+import os
+
+# Step 1: Get the current path of the Python script
+current_path = os.path.dirname(os.path.abspath(__file__))
+
+# Step 2: Go up one level to reach the 'parent' directory
+parent_path = os.path.dirname(current_path)
+
+# Step 3: Navigate into the sibling 'javascript' folder from 'parent'
+java_folder = os.path.join(parent_path, "java")
+
+# Step 4: Target file path inside the 'javascript' folder
+target_file_path = os.path.join(java_folder, "java_notes.txt")
 
 my_notes = """
 ------------------------------------------------------------------------------
@@ -32,6 +44,8 @@ public class Varaibles {
 """
 
 
-myfile.write(my_notes)
+# Step 6: Append the notes to the file
+with open(target_file_path, "a", encoding="utf-8") as myfile:
+    myfile.write(my_notes)
 
 myfile.close()

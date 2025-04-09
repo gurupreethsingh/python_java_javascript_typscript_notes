@@ -1,45 +1,27 @@
-import os
-
-# Step 1: Get the current path of the Python script
-current_path = os.path.dirname(os.path.abspath(__file__))
-
-# Step 2: Go up one level to reach the 'parent' directory
-parent_path = os.path.dirname(current_path)
-
-# Step 3: Navigate into the sibling 'typescript' folder from 'parent'
-typescript_folder = os.path.join(parent_path, "typescript")
-
-# Step 4: Target file path inside the 'typescript' folder
-target_file_path = os.path.join(typescript_folder, "typescript_notes.txt")
-
-my_notes = """
-------------------------------------------------------------------------------
-topic 4: Typescript functions
--------------------------------------------------------------------------------
 // 1. Function without parameters
 function add(): void {
-  const a: number = 10;
-  const b: number = 20;
-  console.log(a + b);
+      const a: number = 10;
+      const b: number = 20;
+      console.log(a + b);
 }
 add();
 
 // 2. Function with parameters
 function greet(name: string): void {
-  console.log(`hello ${name}`);
+      console.log(`hello ${name}`);
 }
 greet("ecoders");
 
 // 3. Function with default parameter
 function greeting(name: string = "Ecoders"): void {
-  console.log(`Hello ${name}`);
+      console.log(`Hello ${name}`);
 }
 greeting();
 greeting("rajesh");
 
 // 4. Function with return value
 function subtract(a: number, b: number): number {
-  return a - b;
+      return a - b;
 }
 let result: number = subtract(30, 20);
 console.log(result);
@@ -47,15 +29,15 @@ console.log(subtract(50, 25));
 
 // 5. Variable function expression
 const square = function (number: number): number {
-  return number * number;
+      return number * number;
 };
 console.log(square(5));
 
 // 6. Arrow functions
 const addition = (): void => {
-  const a: number = 20;
-  const b: number = 30;
-  console.log(a + b);
+      const a: number = 20;
+      const b: number = 30;
+      console.log(a + b);
 };
 addition();
 
@@ -64,59 +46,50 @@ console.log(greetToday("ecoders"));
 
 // 7. IIFE (Immediately Invoked Function Expression)
 (function (): void {
-  console.log("Hello Ecoders");
+      console.log("Hello Ecoders");
 })();
 
 // 8. Async function
-async function fetchData(): Promise<Response> {
-  return await fetch("http://localhost:3006/all-users");
-}
+// async function fetchData(): Promise<Response> {
+//       return await fetch("http://localhost:3006/all-users");
+// }
 
 // 9. Callback functions with map
 const numbers: number[] = [1, 2, 3, 14, 5, 6, 7, 8, 9, 10];
 
 const squares: number[] = numbers.map((eachnumber: number): number => {
-  return eachnumber * eachnumber;
+      return eachnumber * eachnumber;
 });
 console.log(squares);
 
 // filter(): even numbers
 const even: number[] = numbers.filter((eachnumber: number): boolean => {
-  return eachnumber % 2 === 0;
+      return eachnumber % 2 === 0;
 });
 console.log(even);
 
 // odd numbers
 const odd: number[] = numbers.filter((eachnumber: number): boolean => {
-  return eachnumber % 2 !== 0;
+      return eachnumber % 2 !== 0;
 });
 console.log(odd);
 
 // multiples of 7
 const seven_multiples: number[] = numbers.filter((eachnumber: number): boolean => {
-  return eachnumber % 7 === 0;
+      return eachnumber % 7 === 0;
 });
 console.log(seven_multiples);
 
 // reduce(): sum from 1 to 10
 const nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const sumofnumbers: number = nums.reduce((sum: number, eachnumber: number): number => {
-  return sum + eachnumber;
+      return sum + eachnumber;
 }, 0);
 console.log(sumofnumbers);
 
 // Combined map + filter + reduce
 const combinedResult: number = numbers
-  .filter((eachnumber: number): boolean => eachnumber % 2 === 0)
-  .map((eachnumber: number): number => eachnumber * eachnumber)
-  .reduce((sum: number, eachnumber: number): number => sum + eachnumber, 0);
+      .filter((eachnumber: number): boolean => eachnumber % 2 === 0)
+      .map((eachnumber: number): number => eachnumber * eachnumber)
+      .reduce((sum: number, eachnumber: number): number => sum + eachnumber, 0);
 console.log(combinedResult);
-
-"""
-
-
-# Append the notes to the file
-with open(target_file_path, "a", encoding="utf-8") as myfile:
-    myfile.write(my_notes)
-
-myfile.close()

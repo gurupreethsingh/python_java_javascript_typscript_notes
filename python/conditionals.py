@@ -1,10 +1,4 @@
-myfile = open("python_notes.txt" , "a")
-
-my_notes = """
-
-------------------------------------------------------------------------------
-topic 3: # if, if-else,  if-elif-else, break, continue, 
--------------------------------------------------------------------------------
+# if, if-else,  if-elif-else, break, continue, 
 
 name = "raju"
 
@@ -20,7 +14,7 @@ else:
       print("Access denied")
 
 
-# break , 
+# break, 
 for i in range(1,11):
       print(i, end=" ")
 
@@ -31,6 +25,7 @@ for i in range(1,11):
       print(i, end=" ")
       if(i == 5):
             break
+
 
 print()
 print("*" * 60)
@@ -43,17 +38,12 @@ for i in range(1, 11):
 print()
 print("*" * 60)
 
- logical "and" operators
+print(""" logical "and" operators
  logical "or"  operators
- logical "not" operators
+ logical "not" operators""")
+
 
 for i in range(1, 11):
       if i >= 4 and i<= 7:
             continue
       print(i, end = " ")
-"""
-
-
-myfile.write(my_notes)
-
-myfile.close()

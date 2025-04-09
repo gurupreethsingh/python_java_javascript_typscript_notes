@@ -1,23 +1,4 @@
-import os
-
-# Step 1: Get the current path of the Python script
-current_path = os.path.dirname(os.path.abspath(__file__))
-
-# Step 2: Go up one level to reach the 'parent' directory
-parent_path = os.path.dirname(current_path)
-
-# Step 3: Navigate into the sibling 'javascript' folder from 'parent'
-javascript_folder = os.path.join(parent_path, "javascript")
-
-# Step 4: Target file path inside the 'javascript' folder
-target_file_path = os.path.join(javascript_folder, "javascript_notes.txt")
-
-my_notes = """
-
-------------------------------------------------------------------------------
-topic 5 : Functions in javascript
-------------------------------------------------------------------------------
-// function declaration and execution.
+// function declaration.
 
 // 1. function without parameters.
 function add() {
@@ -145,12 +126,28 @@ var result = numbers
 
 console.log(result);
 
+// recursive functions.
+// find the factorial of a number using recurssion.
 
-"""
+// normal way without recurssion.
 
+var factorial = 1;
 
-# Append the notes to the file
-with open(target_file_path, "a", encoding="utf-8") as myfile:
-    myfile.write(my_notes)
+var n = 5;
 
-myfile.close()
+for (let i = 1; i <= n; i++) {
+  factorial = factorial * i;
+}
+console.log(`The factorial of ${n} is ${factorial}`);
+
+// using recursion.
+
+function findfactorial(number) {
+  if (number == 1) {
+    return 1;
+  } else {
+    return number * findfactorial(number - 1);
+  }
+}
+
+console.log(`The factorial of ${n} is ${findfactorial(5)}`);

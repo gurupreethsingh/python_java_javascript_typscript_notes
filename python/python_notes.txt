@@ -7,13 +7,11 @@ topic 1: python variables
     c = 'a'
     d = "hello world"
     f = True
-
     print(a)
     print(b)
     print(c)
     print(d)
     print(f)    
-
 
 ------------------------------------------------------------------------------
 topic 2: python concatination
@@ -28,23 +26,69 @@ topic 2: python concatination
     print("We will get {2} when we add {1} with {0}".format(a, b, c))
 
     result = True
-
     print("the result is ", result)
 
     first_name = "Gurupreeth"
     last_name = "Singh"
-
     print(first_name + last_name)
 
-
 ------------------------------------------------------------------------------
-topic 3: relational operators
+topic 3 : relational operators
 -------------------------------------------------------------------------------
     a = 10 
     b = 20 
-
     print(a <= b)
     print(a == b)
     print(a >= b)
     print(a != b)
+
+------------------------------------------------------------------------------
+topic 4 : # if, if-else,  if-elif-else, break, continue, logical operators
+-------------------------------------------------------------------------------
+
+      name = "raju"
+
+      if name == "raj":
+            print("access granted.")
+      elif name == "raju":
+            print("access granted.")
+      elif name == "rajesh":
+            print("access granted.")
+      elif name == "ramesh":
+            print("access granted.")
+      else:
+            print("Access denied")
+
+
+      # break , 
+      for i in range(1,11):
+            print(i, end=" ")
+
+      print()
+      print("*" * 50)
+
+      for i in range(1,11):
+            print(i, end=" ")
+            if(i == 5):
+                  break
+
+      print()
+      print("*" * 60)
+
+      for i in range(1, 11):
+            if i== 5:
+                  continue
+            print(i, end = " ")
+
+      print()
+      print("*" * 60)
+
+      logical "and" operators
+      logical "or"  operators
+      logical "not" operators
+
+      for i in range(1, 11):
+            if i >= 4 and i<= 7:
+                  continue
+            print(i, end = " ")
 
