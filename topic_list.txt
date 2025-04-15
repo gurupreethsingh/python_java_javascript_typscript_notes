@@ -1,0 +1,15 @@
+1. identifiers
+2. datatypes and variables. 
+3. conditional statements. (if, if-else, elif, switch-case, break, continue)
+4. loop control statment. 
+5. functions. 
+6. list, tuple, dictionary, set. (Collection framework) (list comprehension)
+7. oops concepts (class, object, inheritance, methodoverriding, polymorphism, )
+(method overloading, constructor overloading , abstraction, interface)
+8. expection handling. 
+9. file handling. 
+10. Multi Threads. 
+
+numbers = [11,22,33,44,55];  python
+const numbers = [11,22,33,44];  javascript
+const nums : number[] = [11,22,33,4,4,55];  typescript

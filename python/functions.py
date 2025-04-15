@@ -123,17 +123,17 @@ print(list(map(square, l1)))
 
 # recursive functions. 
 
-def sum(num):
-      if num == 1:
-            return 1
-      else:
-            return num + sum(num-1)
+# def sum(num):
+#       if num == 1:
+#             return 1
+#       else:
+#             return num + sum(num-1)
 
 # print(sum(1))
 
 # print(sum(2))
 
-print(dir(list))
+# print(dir(list))
 
 # l1 = [1,2,3,4,5,6,7,8,9,10]
 
@@ -142,4 +142,23 @@ print(dir(list))
 #       print("-" * 40)
 
 
-print(sum(100))
+# print(sum(100))
+
+
+# lambda funcitons. (funciton without names.)
+
+# print(list(map(lambda i: i * i, range(1, 11))))
+
+
+# list comprehension. 
+
+# l1 = [1,2,3,4,5]
+
+# def square(num):
+#       return num* num
+
+# for i in l1:
+#       print(square(i))
+
+
+print([i*i for i in range(1,6)])   # list comprehinsion.
